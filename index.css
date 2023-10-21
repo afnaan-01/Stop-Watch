@@ -63,9 +63,9 @@ button{
 }
 .list{
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
        overflow-y: auto;
-       height: 45vh;
+       height: 41vh;
 }
 .record {
       display: flex;
@@ -73,9 +73,14 @@ button{
        height: 12.5%;
        background-color: gray;
        font-size: 2vw;
+       align-items: center;
        border-bottom: 2px solid rgb(77, 73, 73);
        font-weight:600;
        font-family:sans-serif;
+}
+
+.list::-webkit-scrollbar{
+        visibility:collapse;
 }
 
 

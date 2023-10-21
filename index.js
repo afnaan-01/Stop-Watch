@@ -6,7 +6,8 @@ let start = document.getElementById('start');
 let stp = document.getElementById('stop');
 let reset = document.getElementById('reset');
 let rc = document.getElementById('list');
-  let hr,min,sec,ms;
+let rcb = document.getElementById('rcb');
+  let hr,min,sec,ms,div;
 function values(){
    hr=0,min=0,sec=0,ms=0;
  };
@@ -24,9 +25,12 @@ start.addEventListener('click',()=>{
       clearInterval(c);
   });
   reset.addEventListener('click',()=>{
+    i=true;
     clearInterval(c);
     values();
     assignment();
+    rc.innerHTML ='';
+    t=0;
   });
 
   function timer(){
@@ -57,14 +61,18 @@ start.addEventListener('click',()=>{
 
        let record = ()=>{
          if(i == false){
-
            t = t+1;
-           let div = document.createElement('div');
-           div.classList('record');
+            div = document.createElement('div');
+           div.classList ='record';
            div.innerHTML =   `  
            <span class="sno">${t}</span>
-           <span class="rtime">${hr}:${min}:${sec}:${ms}</span>
+           <span class="rtime">${hrt.innerHTML}:${mint.innerHTML}:${sect.innerHTML}:${mst.innerHTML}</span>
         `;
-          rc.appendChild(div);   
+        div.id ='l1';
+          if(t > 1){
+            let pr = rc.firstElementChild;
+             pr.removeAttribute('id');
+          }
+          rc.insertAdjacentElement('afterbegin',div); 
          }
        }
