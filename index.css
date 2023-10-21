@@ -9,13 +9,14 @@ html,body{
 }
 .container{
      user-select: none;
-      height: 100vh;
+      height: 50vh;
       width: 100vw;
        display: flex;
-       justify-content: center;
+       justify-content: start ;
        align-items: center;
        flex-direction: column;
        gap: 5vh;
+      
 }
 .times span:nth-child(odd){
      font-size: 16vw;
