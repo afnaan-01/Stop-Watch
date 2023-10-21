@@ -2,10 +2,11 @@
       margin: 0;
       padding: 0;
 }
-html,body{
+body{
        height: 100%;
        width: 100%;
        background-color: rgb(40, 36, 36);
+       overflow: hidden;
 }
 .container{
      user-select: none;
@@ -42,3 +43,39 @@ button{
     display: flex;
       gap: 7vw;
 }
+
+.records{
+      background-color: white;
+       border: 3px solid rgb(77, 73, 73);
+       border-radius: 10px;
+      height: 50vh;
+      overflow: hidden;
+}
+.records label{
+       background-color: rgb(77, 73, 73);
+       display: block;
+       color: white;
+       padding : 2vh 2vw ;
+       font-size: 2vw;
+       display: flex;
+       justify-content: space-between;
+       height: 5vh;
+}
+.list{
+      display: flex;
+      flex-direction: column-reverse;
+       overflow-y: auto;
+       height: 45vh;
+}
+.record {
+      display: flex;
+       justify-content: space-around;
+       height: 12.5%;
+       background-color: gray;
+       font-size: 2vw;
+       border-bottom: 2px solid rgb(77, 73, 73);
+       font-weight:600;
+       font-family:sans-serif;
+}
+
+

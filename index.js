@@ -5,17 +5,22 @@ let mst = document.getElementById('ms');
 let start = document.getElementById('start');
 let stp = document.getElementById('stop');
 let reset = document.getElementById('reset');
+let rc = document.getElementById('list');
   let hr,min,sec,ms;
 function values(){
    hr=0,min=0,sec=0,ms=0;
  };
   values();
   let c;
-   let t;
+   let t=0,i;
 start.addEventListener('click',()=>{
- c = setInterval('timer()',10);
+  if(!(i ==false)){
+    i=false;
+    c = setInterval('timer()',10);
+  }
   });
   stp.addEventListener('click',()=>{
+      i=true;
       clearInterval(c);
   });
   reset.addEventListener('click',()=>{
@@ -49,3 +54,17 @@ start.addEventListener('click',()=>{
 
     }
     
+
+       let record = ()=>{
+         if(i == false){
+
+           t = t+1;
+           let div = document.createElement('div');
+           div.classList('record');
+           div.innerHTML =   `  
+           <span class="sno">${t}</span>
+           <span class="rtime">${hr}:${min}:${sec}:${ms}</span>
+        `;
+          rc.appendChild(div);   
+         }
+       }
