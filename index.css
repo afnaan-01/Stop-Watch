@@ -1,0 +1,43 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+html,body{
+       height: 100%;
+       width: 100%;
+       background-color: rgb(40, 36, 36);
+}
+.container{
+     user-select: none;
+      height: 100vh;
+      width: 100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 5vh;
+}
+.times span:nth-child(odd){
+     font-size: 16vw;
+     color:white;
+}
+.times span:nth-child(even){
+     font-size: 2.5vw;
+     color: white;
+}
+
+button{
+     all: unset;
+     text-align: center;
+     font-size: 1.5vw;
+     font-family:serif;
+     padding: 5px;
+     width:5vw;
+     background-color: rgb(0, 191, 255);
+     cursor: pointer;
+}
+
+.controls{
+    display: flex;
+      gap: 7vw;
+}

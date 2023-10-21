@@ -1,0 +1,51 @@
+let hrt = document.getElementById('hr');
+let mint = document.getElementById('min');
+let sect = document.getElementById('sec');
+let mst = document.getElementById('ms');
+let start = document.getElementById('start');
+let stp = document.getElementById('stop');
+let reset = document.getElementById('reset');
+  let hr,min,sec,ms;
+function values(){
+   hr=0,min=0,sec=0,ms=0;
+ };
+  values();
+  let c;
+   let t;
+start.addEventListener('click',()=>{
+ c = setInterval('timer()',10);
+  });
+  stp.addEventListener('click',()=>{
+      clearInterval(c);
+  });
+  reset.addEventListener('click',()=>{
+    clearInterval(c);
+    values();
+    assignment();
+  });
+
+  function timer(){
+   ms = ms + 1;
+   
+     if(ms == 100){
+       sec = sec + 1;
+       ms =0;
+      }
+      if(sec == 60){
+         min = min + 1;
+         sec = 0;
+      }
+      if(min == 60){
+          hr = hr + 1;
+          min =0;
+      }
+      assignment();
+    }
+    let assignment = () =>{
+      mst.innerHTML = (ms < 10)? "0"+ms : ms;
+      sect.innerHTML = (sec <10)? "0"+sec : sec;
+      mint.innerHTML = (min <10)? "0"+min : min;
+      hr.innerHTML = (hr <10)? "0"+hr : hr;
+
+    }
+    
