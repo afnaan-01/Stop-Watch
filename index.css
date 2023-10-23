@@ -105,11 +105,11 @@ button{
               height: 2vh;
        }
        .times span:nth-child(odd){
-            font-size: 19vw;
+            font-size: 18vw;
            
        }
        .times span:nth-child(even){
-            font-size: 4vw;
+            font-size: 3.5vw;
        }
        .record{
              min-height: 5vh;
