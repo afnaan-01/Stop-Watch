@@ -10,7 +10,7 @@ body{
 }
 .container{
      user-select: none;
-      height: 50vh;
+       height: 50vh;
       width: 100vw;
        display: flex;
        justify-content: start ;
@@ -45,11 +45,12 @@ button{
 }
 
 .records{
+
       background-color: white;
        border: 3px solid rgb(77, 73, 73);
        border-radius: 10px;
-      height: 50vh;
-      overflow: hidden;
+       height: 50vh;
+       overflow: hidden;
 }
 .records label{
        background-color: rgb(77, 73, 73);
@@ -59,19 +60,21 @@ button{
        font-size: 2vw;
        display: flex;
        justify-content: space-between;
-       height: 5vh;
+       height: 15%;
        align-items: center;
+
 }
 .list{
       display: flex;
       flex-direction: column;
-       overflow-y: auto;
-       height: 45vh;
+      overflow-y: auto;
+       height: 78%;  
+ 
 }
 .record{
       display: flex;
        justify-content: space-around;
-       min-height: 12.5%;
+       max-height: max-content;
        background-color: gray;
        font-size: 2vw;
        align-items: center;
@@ -89,6 +92,9 @@ button{
       .container{         
               gap: 2vh;
             justify-content: center;
+       }
+       .list{
+             height: 85%;
        }
        button{
             font-size: 3.5vw;
