@@ -62,10 +62,11 @@ start.addEventListener('click',()=>{
        let record = ()=>{
          if(i == false){
            t = t+1;
+            let tm = (t<10)? "0" + t:t;
             div = document.createElement('div');
            div.classList ='record';
            div.innerHTML =   `  
-           <span class="sno">${t}</span>
+           <span class="sno">${tm}</span>
            <span class="rtime">${hrt.innerHTML}:${mint.innerHTML}:${sect.innerHTML}:${mst.innerHTML}</span>
         `;
         div.id ='l1';
