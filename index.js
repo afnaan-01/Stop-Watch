@@ -77,3 +77,5 @@ start.addEventListener('click',()=>{
           rc.insertAdjacentElement('afterbegin',div); 
          }
        }
+
+       alert(window.innerWidth);

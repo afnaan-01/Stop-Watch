@@ -32,6 +32,7 @@ body {
      display: flex;
      align-items: baseline;
      justify-content: center;
+     flex-wrap: wrap;
 }
 
 .times span:nth-child(odd) {
@@ -42,8 +43,7 @@ body {
      font-size: 3vw;
 }
 
-.controls button,
-label button {
+.controls button,label button {
      all: unset;
      display: inline;
      margin: 0 1vw;
@@ -77,8 +77,11 @@ label button {
 
 label button {
      border-radius: 0;
-     height: fit-content;
+     margin: 0;
+     padding: 0;
      font-size: 2vw;
+     width: 3.5vw;
+     height: 2vw;
 }
 
 .list{
@@ -96,4 +99,17 @@ label button {
         justify-content: space-evenly;
         font-size: 2vw;
         height: fit-content;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+     .times span:nth-child(odd) {
+          font-size: 20vw;
+     }
+     
+     .times span:nth-child(even) {
+          font-size: 5vw;
+     }    
 }
