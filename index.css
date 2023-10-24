@@ -31,7 +31,7 @@ body {
 .times {
      display: flex;
      align-items: baseline;
-     justify-content: center;
+     justify-content: flex-start;
      flex-wrap: wrap;
 }
 
@@ -104,13 +104,13 @@ label button {
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:700px){
      .times span:nth-child(odd) {
-          font-size: 20vw;
+          font-size: 25vw;
      }
      
      .times span:nth-child(even) {
-          font-size: 5vw;
+          font-size: 10vw;
      } 
      .controls button,label button {
           padding:1vw;
