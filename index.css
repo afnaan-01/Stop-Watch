@@ -111,5 +111,24 @@ label button {
      
      .times span:nth-child(even) {
           font-size: 5vw;
-     }    
+     } 
+     .controls button,label button {
+          padding:1vw;
+          font-size: 2vw;
+          width: 5vw;
+          height: 5vw;
+     }   
+     .records label {
+          font-size: 2.5vw;
+          padding: 0 1vw;
+          height: 5vh;
+     }
+     label button {
+          font-size: 3vw;
+          width: 5vw;
+          height: 3vw;
+     }
+     .list .record{
+          font-size: 4vw;
+  }
 }
