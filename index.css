@@ -1,0 +1,94 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+}
+
+.root {
+     width: 100vw;
+     height: 100vh;
+     border: 2px solid red;
+     font-family: sans-serif;
+}
+
+.container {
+     width: 100vw;
+     height: 50vh;
+     border: 2px solid blue;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     /* gap: 2vw; */
+}
+
+.times {
+     display: flex;
+     align-items: baseline;
+     justify-content: center;
+}
+
+.times span:nth-child(odd) {
+     font-size: 12vw;
+}
+
+.times span:nth-child(even) {
+     font-size: 3vw;
+}
+
+.controls button,
+label button {
+     all: unset;
+     display: inline;
+     margin: 0 1vw;
+     padding: 0.5vw;
+     text-align: center;
+     background-color: aqua;
+     font-size: 1.2vw;
+     width: 3.5vw;
+     height: 3.5vw;
+     cursor: pointer;
+     border-radius: 50%;
+}
+
+.records {
+     width: 100vw;
+     height: 50vh;
+     border: 2px solid green;
+     position: relative;
+}
+
+.records label {
+     font-size: 1.5vw;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 1vw;
+     height: 8vh;
+     background-color: burlywood;
+}
+
+label button {
+     border-radius: 0;
+     height: fit-content;
+}
+
+.list{
+    height:42vh;
+    overflow: auto;
+    display: flex;
+   flex-direction: column;
+}
+.list .record{
+        display: flex;
+        align-items:center ;
+        justify-content: space-evenly;
+        font-size: 2vw;
+        height: fit-content;
+}
