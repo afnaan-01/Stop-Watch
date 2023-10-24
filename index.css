@@ -137,23 +137,23 @@ label button {
           font-size: 7vw;
      } 
      .controls button,label button {
-          padding:1vw;
-          font-size: 3.5vw;
-          width: 7.5vw;
-          height: 7.5vw;
+          padding:2vw;
+          font-size: 4.2vw;
+          width: 8vw;
+          height: 8vw;
           cursor:unset;
      }   
      .records label {
-          font-size: 3.5vw;
+          font-size: 5vw;
           padding: 0 2vw;
           height: 6vh;
      }
      label button {
-          font-size: 5vw;
-          width: 7vw;
-          height: 3.5vw;
+          font-size: 8vw;
+          width: 10vw;
+          height: fit-content;
      }
      .list .record{
-          font-size: 5vw;
+          font-size: 7vw;
   }
 }
