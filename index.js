@@ -78,4 +78,4 @@ start.addEventListener('click',()=>{
          }
        }
 
-       alert('hello');
+       alert('hi');
